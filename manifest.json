@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+
+    "name": "Music Player",
+    "description": "Plays music from your music library",
+    "version": "1.0",
+
+    "default_locale": "en",
+    "icons": {
+
+    },
+
+    "browser_action": {
+        "default_icon": {
+
+        },
+        "default_title": "MusicPlayer"
+    },
+
+    "background": {
+        "scripts": []
+    },
+
+    "permissions": [
+        "notifications",
+        "storage"
+    ]
+}
