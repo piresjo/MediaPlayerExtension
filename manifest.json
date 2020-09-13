@@ -3,22 +3,29 @@
 
     "name": "Music Player",
     "description": "Plays music from your music library",
-    "version": "1.0",
+    "version": "0.1",
 
     "default_locale": "en",
-    "icons": {
-
-    },
+    
+    "icons": { "16": "favicons/favicon-16x16.png",
+        "32": "favicons/favicon-32x32.png",
+       "192": "favicons/android-chrome-192x192.png" },
 
     "browser_action": {
-        "default_icon": {
-
-        },
-        "default_title": "MusicPlayer"
+        "browser_action": {
+            "default_icon": {
+              "16": "images/icon16.png",
+              "24": "images/icon24.png",
+              "32": "images/icon32.png"
+            },
+            "default_title": "Google Mail",      
+            "default_popup": "popup.html"        
+          }
     },
 
     "background": {
-        "scripts": []
+        "scripts": ["musicPlayer.js"],
+        "persistent": false
     },
 
     "permissions": [
